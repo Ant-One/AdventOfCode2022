@@ -1,17 +1,17 @@
 def main():
     with open("input", "r") as f:
         counter = 0
-        chars = [0, 0, 0, 0]
+        chars = [None] * 14
         while True:
             c = f.read(1)
             counter += 1
 
-            chars[counter%4] = c
+            chars[counter%14] = c
 
             char_set = set(chars)
             print(chars)
             
-            if len(char_set) == 4 and counter > 4:
+            if len(char_set) == 14 and counter > 14:
                 print(f"found at {counter}")
                 break
 
