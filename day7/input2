@@ -1,0 +1,17 @@
+$ cd /
+$ ls
+100 a
+dir b
+dir c
+dir d
+50 e.qvw
+$ cd b
+$ ls
+20 e
+30 f
+dir g
+$ cd g
+$ ls
+1 cqldc.nmr
+2 drg
+3 gcfth
